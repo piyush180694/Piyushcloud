@@ -1,0 +1,63 @@
+<html>
+<style>
+div#div1
+{
+//border:2px solid blue;
+width:590px;
+height:200px;
+position:absolute;
+left:400px;
+top:100px;
+padding-top:50px;
+padding-left:30px;
+background:cyan;
+}
+input#alink
+{
+border:0px;
+text-align:center;
+display:block;
+font-size:15px;
+width:100px;
+height:40px;
+text-decoration:none;
+margin-left:230px;
+//color:#D2691E;
+color:white;
+background:#4169E1;
+border-radius:5px 5px;
+padding-top:2px;
+cursor:pointer;
+
+}
+input:hover#alink
+{
+//color:blue;
+color:#D2691E;
+}
+</style>
+<script>
+function a()
+{
+x=document.getElementById("alink");
+x.style.text-decoration="underline";
+}
+</script>
+</body>
+<div id='div1'>
+<form action='http://192.168.0.1/cgi-bin/cloud/saas_a.py' method='POST'>
+	<b>Select Software(s):</b><select name='soft' style='margin-left:50px;cursor:pointer;height:40px;' ><br /><br />
+	<option>firefox</option>
+	<option>google-chrome</option>
+	<option>gnome-terminal</option>
+	<option>xterm</option>
+	<option>wireshark</option>
+	<option>virt-viewer</option>
+	<option>virt-manager</option>
+	</select><br /><br /><br /><br />
+	<input type='submit' value='Submit' id='alink'/> 
+	<!-- <a href='http://192.168.0.1/cgi-bin/cloud/saas_a.py' id='alink' ><b>Submit</b></a> -->
+</form>
+</div>
+</body>
+</html>	

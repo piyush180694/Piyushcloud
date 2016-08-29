@@ -1,0 +1,100 @@
+<html>
+<style>
+div#d1
+{
+	//border:2px solid #414;
+	width:45px;
+	height:100px;
+	position:absolute;
+	top:0px;
+	left:1200px;
+}
+a#a1
+{
+	//border:2px solid blue;
+	display:block;
+	visibility:visible;
+	text-decoration:none;
+	color:#e1e;
+}
+a#a2
+{
+	//border:2px solid blue;
+	display:block;
+	visibility:hidden;
+	text-decoration:none;
+	color:black;
+}
+a:hover#a2
+{
+	color:blue;
+}
+a#a3
+{
+	//border:2px solid blue;
+	display:block;
+	visibility:hidden;
+	text-decoration:none;
+	color:black;
+}
+a:hover#a3
+{
+	color:blue;
+}
+a#a4
+{
+	//border:2px solid blue;
+	display:block;
+	visibility:hidden;
+	text-decoration:none;
+	color:black;
+}
+a:hover#a4
+{
+	color:blue;
+}
+a#a5
+{
+	//border:2px solid blue;
+	display:block;
+	visibility:hidden;
+	text-decoration:none;
+	color:black;
+}
+a:hover#a5
+{
+	color:blue;
+}
+</style>
+<script>
+	function vis()
+	{
+		x2=document.getElementById('a2');
+		x2.style.visibility="visible";
+		x3=document.getElementById('a3');
+		x3.style.visibility="visible";
+		x4=document.getElementById('a4');
+		x4.style.visibility="visible";
+		x5=document.getElementById('a5');
+		x5.style.visibility="visible";
+		d=document.getElementById('d1');
+	}
+	function hid()
+	{
+		x2.style.visibility="hidden";
+		x3.style.visibility="hidden";
+		x4.style.visibility="hidden";
+		x5.style.visibility="hidden";
+		d.style.border="0px none #414";
+	}
+</script>
+<body>
+<div id='d1' onmouseout='hid()'>
+<a href='http://192.168.0.1/dropdown.html' onclick='vis()' id='a1'>cloud</a>
+<a href='http://192.168.0.1/saas.html' onmouseover='vis()' id='a2'>saas</a>
+<a href='http://192.168.0.1/staas.html' onmouseover='vis()' id='a3'>staas</a>
+<a href='http://192.168.0.1/iaas.html' onmouseover='vis()'  id='a4'>iaas</a>
+<a href='http://192.168.0.1/paas.html' onmouseover='vis()' id='a5'>paas</a>
+</div>
+</body>
+</html>

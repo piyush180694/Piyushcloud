@@ -1,0 +1,62 @@
+<html>
+<style>
+div.top
+{
+	//border:2px solid #e1e;
+	position:absolute;
+	top:95px;
+	left:260px;
+	width:600px;
+	height:500px;
+	margin-left:50px;
+	padding-left:80px;
+	border-radius:10px 10px 10px 10px;
+	//box-shadow: 5px 5px grey;
+	background:#00bfff;
+}
+div.top1
+{
+	//border:2px inset #e1e;
+	width:800px;
+	height:100px;
+	position:absolute;
+	top:-20px;
+	left:250px;
+	border-radius:10px 10px 10px 10px;
+	text-align:center;
+	background:url('top.jpg');
+	color:white;
+}
+div.top1:hover
+{
+	top:-10px;
+	color:cyan;
+}
+</style>
+<body>
+<div class='submit'>
+</div>
+<div class='top'>
+		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Sign up</h2><br />
+		<form action='http://192.168.0.1/cgi-bin/cloud/reg.py' method='POST'>
+		<b>First:</b><input type='text' name='f' />&nbsp;<b>Last:</b><input type='text' name='l' /><br /><br />
+		<b>username:</b><input type='text' name='user' /><br /><br />
+		<b>password:</b><input type='password' name='passwd' /><br /><br />
+		<b>Email:</b><input type='text' name='e' /><br/><br />
+		<b>Address:</b><input type='text' name='a' /><br /><br />
+		<b>pincode:</b><input type='text'name='pin' /><br /><br />
+		<b>phone:</b><input type='text' name='ph' /><br /><br /><br />&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type='reset' value='Reset' />
+		<input type='submit' value='Submit' />
+		</form>
+</div>
+<div class='top1'>
+	<br />
+	<h2>Sign up Page</h2> 
+</div>
+</body>
+</html>

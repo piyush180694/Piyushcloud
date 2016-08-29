@@ -1,0 +1,37 @@
+<html>
+<style>
+div#main1
+{
+	//border:2px solid #00ffff;
+	width:600px;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:400px;
+	text-align:center;
+	background:#00bfff;
+	color:white;
+	//border-radius:10px 10px 10px 10px;
+	box-shadow:2px 2px #87ceeb
+}
+input#li
+{
+	width:200px;
+	height:50px;
+	background:#0080ff;
+	border:0px;
+	cursor:pointer;
+}
+</style>
+<body>
+<div id='main1'>
+<h1><b>Change Password</b></h1><br /><br /><br />
+<form action='http://192.168.0.1/cgi-bin/cloud/fgt_a.py' method='POST'>
+<h2><b>Enter New Password</b></h2><input type='text' name='u' class='inp' placeholder="Enter new password" style='text-align:center;' /><br/>
+<h2><b>Retype Password</b></h2><input type='password' name='p' class='inp' placeholder="Retype password" style='text-align:center;' /><br /><br />
+<br />
+<input type='submit' value="Change" id='li' />
+</form>
+</div>
+</body>
+</html>

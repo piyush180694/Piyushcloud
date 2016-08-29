@@ -1,0 +1,90 @@
+<html>
+<script>
+function a1()
+{
+	in1=document.getElementById("in1");
+	in1.style.border="1px solid #6495ED";
+}
+function a2()
+{
+	//in1=document.getElementById("in1");
+	in1.style.border="0px";
+}
+function b1()
+{
+	in2=document.getElementById("in2");
+	in2.style.border="1px solid #6495ED";
+}
+function b2()
+{
+	//in2=document.getElementById("in2");
+	in2.style.border="0px";
+}
+</script>
+<style>
+div#top
+{
+	width:100%;
+	height:95px;
+	position:absolute;
+	top:0px;
+	text-align:center;
+	background:url("header.jpg");
+	color:white;
+}
+div#frm
+{
+	//border:2px solid #e1e;
+	width:500px;	
+	height:350px;
+	position:absolute;
+	top:150px;
+	left:420px;
+	//visibility:hidden;
+	padding-top:30px;
+	padding-left:50px;
+	border-radius:10px 10px 10px 10px;
+	background:cyan;
+	color:black;
+}
+input#in1
+{
+	border:1px solid white;
+	height:30px;
+	width:250px;
+}
+input#in2
+{
+	border:1px solid white;
+	height:30px;
+	width:250px;
+}
+</style>
+<body>
+<div id='top'>
+<b><br /><h3>Get Your Storage</h3></b>
+</div>
+<div id='frm'>
+<br />
+<form id='div1' action='http://192.168.0.1/cgi-bin/cloud/staas_a.py' method='POST'>
+<b>Storage type:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<select name='ch' style="border:0px;width:200px;height:30px;background:white;">
+		<option>--Please Select--</option>
+		<option>static</option>
+		<option>elastic</option>
+		</select><br /><br />
+<b>Volume name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='text' name='vn' id='in1' onfocus='a1()' onblur='a2()' /><br /><br />
+<b>Size:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='number' name='s' id='in2' onfocus='b1()' onblur='b2()' /><b>MB</b>
+<br /><br /><b>Method:</b><br /><br />
+<b>Secure</b><input type='checkbox' name='sec' value='secure' /><b>Unsecure</b><input type='checkbox' name='sec' value='unsecure' />
+<b>Other</b><input type='checkbox' name='sec' value='other' /><br /><br /><br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='submit' value="Get Storage" style="cursor:pointer;height:40px;width:100px;background:#6495ED;border:0;border-radius:2px 2px;color:white;" />
+</form>
+</div>
+<body>
+</html>

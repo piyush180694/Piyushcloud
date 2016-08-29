@@ -1,0 +1,45 @@
+<html>
+<style>
+div.left
+{
+	//border:2px solid #00ffff;
+	width:600px;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:400px;
+	text-align:center;
+	background:#00bfff;
+	color:white;
+	//border-radius:10px 10px 10px 10px;
+	box-shadow:2px 2px #87ceeb
+}
+input#li
+{
+	width:200px;
+	height:50px;
+	background:#0080ff;
+	border:0px;
+	cursor:pointer;
+}
+a#fp
+{
+	color:blue;
+}
+a:hover#fp
+{
+	color:white;
+}
+</style>
+<body>
+<div class='left'>
+<h1><b>Login Form</h1></b><br /><br /><br />
+<form action='http://192.168.0.1/cgi-bin/cloud/signin.py' method='POST'>
+<h2><b>Username</b></h2><input type='text' name='u' class='inp' placeholder="Enter Username" style='text-align:center;' /><br/>
+<h2><b>Password</b></h2><input type='password' name='p' class='inp' placeholder="Enter Password" style='text-align:center;' /><br /><br /><br />
+<input type='submit' value="sign in" id='li' /><br /><br />
+</form>
+<a href='http://192.168.0.1/fgt.html' id='fp'>Forgot password</a><br /><br />
+</div>
+</body>
+</html>
